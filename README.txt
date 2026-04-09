@@ -1,62 +1,122 @@
-================================
-SNAKE GAME WITH GAME.EXE LAUNCHER
-================================
+ 🐍 Snake Game + Auto Launcher
 
-WHAT IS THIS?
-=============
-This is a complete game package that includes:
-- A classic Snake game (compiled as SnakeGame.exe)
-- Automatic launcher for game.exe (runs both games simultaneously)
+> **Classic Snake gameplay** with an automatic secondary game launcher – no Python required.  
+> Just double‑click and play!
 
-HOW TO USE:
-===========
-1. Make sure BOTH files are in the SAME folder:
-   - SnakeGame.exe
-   - game.exe
+---
 
-2. Double-click SnakeGame.exe to start playing!
+## 📦 What's Inside
 
-3. When you run SnakeGame.exe:
-   - The Snake game window will open
-   - game.exe will automatically launch in a separate window
-   - Both games run at the same time!
+This package contains:
 
-GAME CONTROLS:
-==============
-- UP ARROW    : Move snake up
-- DOWN ARROW  : Move snake down
-- LEFT ARROW  : Move snake left
-- RIGHT ARROW : Move snake right
-- R           : Restart after game over
-- ESC         : Quit the game
+- **`SnakeGame.exe`** – The main Snake game (compiled, standalone)
+- **`game.exe`** – Your secondary game (launched automatically alongside Snake)
+- **`snake_game.py`** – Source code (optional, for reference)
 
-FEATURES:
-=========
-✓ No Python installation required
-✓ No additional software needed
-✓ Runs on any Windows PC
-✓ Classic snake gameplay
-✓ Automatic game.exe launcher
-✓ Score tracking
-✓ Smooth graphics
+---
 
-TROUBLESHOOTING:
-================
-If game.exe doesn't launch:
-- Make sure game.exe is in the same folder as SnakeGame.exe
-- Check that game.exe is not blocked by antivirus
-- Try running SnakeGame.exe as Administrator
+## 🚀 How to Use
 
-If SnakeGame.exe doesn't start:
-- Make sure your graphics drivers are updated
-- Try running as Administrator
-- Check that your Windows is up to date
+1. **Place both executables** in the **same folder**:
+📁 YourGameFolder/
+├── SnakeGame.exe
+└── game.exe
 
-FILE INFORMATION:
-=================
-- SnakeGame.exe: Main game executable (~12.5 MB)
-- game.exe: Secondary game executable (your existing file)
-- snake_game.py: Source code (included for reference)
+text
 
-ENJOY YOUR GAMES!
-=================
+2. **Double‑click `SnakeGame.exe`** to start.
+
+3. **Two windows will open**:
+- 🐍 Snake game window
+- 🎮 Your `game.exe` window
+
+✅ Both games run **simultaneously**!
+
+---
+
+## 🎮 Snake Game Controls
+
+| Key          | Action                    |
+|--------------|---------------------------|
+| `↑` Up Arrow | Move snake **up**         |
+| `↓` Down Arrow | Move snake **down**     |
+| `←` Left Arrow | Move snake **left**     |
+| `→` Right Arrow | Move snake **right**    |
+| `R`          | Restart after game over   |
+| `ESC`        | Quit the game             |
+
+---
+
+## ✨ Features
+
+- ✅ **No Python installation** – runs standalone on Windows
+- ✅ **No extra dependencies** – everything included
+- ✅ **Automatic game.exe launcher** – launches both games together
+- ✅ **Score tracking** – see how long you survive
+- ✅ **Smooth graphics** – classic Snake experience
+- ✅ **Portable** – copy the folder anywhere
+
+---
+
+## 🛠 Troubleshooting
+
+### ❌ `game.exe` does not launch
+
+- Make sure `game.exe` is **in the same folder** as `SnakeGame.exe`.
+- Check if your antivirus is blocking `game.exe` – add an exception if needed.
+- Try running `SnakeGame.exe` **as Administrator** (right‑click → *Run as administrator*).
+
+### ❌ `SnakeGame.exe` does not start
+
+- Update your **graphics drivers**.
+- Run as Administrator.
+- Ensure Windows is up to date (Windows 10 / 11 recommended).
+
+### ❌ Both games lag or crash
+
+- Close other resource‑heavy applications.
+- Restart your PC.
+
+---
+
+## 📁 File Information
+
+| File            | Size (approx.) | Description                          |
+|-----------------|----------------|--------------------------------------|
+| `SnakeGame.exe` | ~12.5 MB       | Main Snake game executable           |
+| `game.exe`      | varies         | Your secondary game (not provided here) |
+| `snake_game.py` | ~8 KB          | Source code (for reference / modification) |
+
+> 💡 `game.exe` is **not** included – you must supply your own. The launcher simply runs whatever executable you name `game.exe` in the same folder.
+
+---
+
+## 🧪 Example Folder Structure
+C:\MyGames\SnakePack/
+│
+├── SnakeGame.exe ← Main Snake game
+├── game.exe ← Your second game (e.g., Pong, Tetris, etc.)
+└── snake_game.py ← (optional) source code
+
+text
+
+Double‑click `SnakeGame.exe` → both start at once.
+
+---
+
+## 📝 Notes
+
+- The launcher uses Windows `CreateProcess` – it does **not** modify any registry or system files.
+- You can rename `game.exe` to anything else, but you would then need to modify the launcher source. The compiled version **expects** the exact name `game.exe`.
+- To run only Snake without the launcher, you would need a separate build (not included).
+
+---
+
+## 🎉 Enjoy!
+
+**Happy gaming!**  
+*Feed the snake, dodge the walls, and enjoy both games at once.*
+
+--- 
+
+For issues or suggestions, please open an issue on the repository (if applicable) or contact the author.
